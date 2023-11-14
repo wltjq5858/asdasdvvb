@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무지개색 계산기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="result" readonly>
+        <div class="buttons">
+            <button class="red" onclick="appendToResult('7')">7</button>
+            <button class="orange" onclick="appendToResult('8')">8</button>
+            <button class="yellow" onclick="appendToResult('9')">9</button>
+            <button class="green" onclick="appendToResult('/')">/</button>
+
+            <button class="blue" onclick="appendToResult('4')">4</button>
+            <button class="indigo" onclick="appendToResult('5')">5</button>
+            <button class="violet" onclick="appendToResult('6')">6</button>
+            <button class="operator" onclick="appendToResult('-')">-</button>
+
+            <button class="red" onclick="appendToResult('1')">1</button>
+            <button class="orange" onclick="appendToResult('2')">2</button>
+            <button class="yellow" onclick="appendToResult('3')">3</button>
+            <button class="operator" onclick="appendToResult('+')">+</button>
+
+            <button class="blue" onclick="appendToResult('0')">0</button>
+            <button class="indigo" onclick="appendToResult('.')">.</button>
+            <button class="violet clear" onclick="clearResult()">C</button>
+            <button class="operator" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
